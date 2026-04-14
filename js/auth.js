@@ -6,12 +6,11 @@ export async function signInWithDiscord() {
     const { data, error } = await supabase.auth.signInWithOAuth({
       provider: 'discord',
       options: {
-        
+        redirectTo: 'https://murderor.github.io/GorenmentBoston'
       }
     });
     
     if (error) throw error;
-    console.log('Перенаправление на Discord...');
     return data;
   } catch (error) {
     console.error('Ошибка входа:', error.message);
