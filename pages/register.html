@@ -1,0 +1,23 @@
+<div class="register-container">
+  <h2>📝 Регистрация персонажа</h2>
+  
+  <div id="discord-info" class="discord-info">
+    <div class="loading">Загрузка информации о Discord...</div>
+  </div>
+  
+  <div id="message" style="display: none;" class="error-message"></div>
+  
+  <div class="form-group">
+    <label>⭐ Имя персонажа *</label>
+    <input type="text" id="character-name" required minlength="2" maxlength="32" autocomplete="off">
+    <small>2-32 символа, буквы, цифры, _</small>
+  </div>
+  
+  <div class="form-group">
+    <label>🔑 Static ID *</label>
+    <input type="text" id="static-id" required minlength="3" maxlength="20" autocomplete="off">
+    <small>3-20 символов, латиница, цифры, - _</small>
+  </div>
+  
+  <button id="register-button" class="btn-register">Завершить регистрацию</button>
+</div>
