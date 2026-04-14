@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мэрия города - Официальный портал</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <span class="logo-icon">🏛️</span>
+        <span class="logo-text">Мэрия города</span>
+      </div>
+      <nav class="nav">
+        <a href="#" class="nav-link">Главная</a>
+        <a href="#" class="nav-link">Новости</a>
+        <a href="#" class="nav-link">Услуги</a>
+        <a href="#" class="nav-link">Контакты</a>
+      </nav>
+      <div class="auth-widget" id="authWidget">
+        <!-- Динамическая загрузка через JS -->
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <section class="hero">
+        <h1>Добро пожаловать на официальный портал мэрии</h1>
+        <p>Здесь вы можете узнать последние новости, подать заявку и участвовать в жизни города.</p>
+      </section>
+
+      <section class="info-panel">
+        <div class="card">
+          <h3>Ваш профиль</h3>
+          <div id="userProfile" class="profile-placeholder">
+            <!-- Информация о пользователе после входа -->
+          </div>
+        </div>
+        <div class="card">
+          <h3>Последние новости</h3>
+          <ul id="newsList" class="news-list">
+            <li>Загрузка...</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Мэрия города. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
